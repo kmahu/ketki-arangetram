@@ -15,7 +15,6 @@ body{
 .nav-bar{
     height: 40px;
     background-color: black;
-    /* background: linear-gradient(to right,#FFD700,pink); */
     display: flex;
     align-items: center;
 }
@@ -30,12 +29,64 @@ body{
 .nav-links a{
     color:rgb(224, 162, 5);
     font-family: "Kelly Slab", sans-serif;
-    /* color: black; */
     font-weight: 500;
     font-size: large;
     text-decoration: none;
 }
+            /* **** NEW  **** */
+.nav-links a:hover{
+    background:rgb(248, 195, 230);
+    border-radius: 3px;
+    color:black;
+    padding:2px;
+}
+ .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
 
+.hamburger span {
+      height: 3px;
+      width: 20px;
+      background: #fff;
+      margin: 3px 0;
+      transition: all 0.3s;
+    }
+
+.nav_phone{
+    margin-left: 350px;
+}
+
+/* 
+    .phone-icon {
+      font-family: 'Material Symbols Outlined';
+      font-size: 48px;
+      color: #2196F3; 
+      vertical-align: middle;
+    }
+    .contact-text {
+      font-size: 20px;
+      margin-left: 10px;
+    } */
+
+      .phone-icon {
+    /* position: fixed;
+    top: 5px;
+    right: 100px;
+    z-index: 1000; */
+    display: inline-flex;
+    /* align-items: center; */
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+  .phone-icon i {
+    margin-right: 8px;
+    margin-left: 130px;;
+  }
             /* --------------HOME PAGE---------------- */
 
 .home-container{
@@ -46,11 +97,11 @@ body{
 }
 
 .nataraj{
-    height:70%;
+    height:90%;
     min-width: 33.3%;
-    flex:1;
-    background-image: url('image/N2.png');
-    /*filter: grayscale();*/
+    flex:1; 
+    background-image: url('image/nataraj.png');
+    /* filter: grayscale(); */
     background-size: cover;
     background-position: center;
  }
@@ -69,11 +120,11 @@ body{
 .ketki
 {
    width:33.3%;
-   height: 100%;
+   height: 90%;
    flex:1;
    background-image: url("image/D1.png");
-   background-size: cover;
-   background-position: center;
+   background-size: cover;    
+   background-position: center; 
 }
 /*                          HOME PAGE TEXTS */
  .invite-BA{
@@ -87,7 +138,6 @@ body{
  .invite-date{
      font-size: 1.5rem;
  }
-
 
              /* --------------ABOUT PAGE---------------- */
 
@@ -103,80 +153,48 @@ body{
     color:rgb(193, 235, 41);
 }
 
-
-
              /* --------------PROGRAM PAGE---------------- */
 
 .program-container{
-    margin:2% 20%;
+    margin:2% 2%;
     padding:2% 4%;
-    border: 4px dotted rgb(151, 19, 158);
+    border: 4px dotted rgb(9, 48, 85);
     border-radius: 5px;
-    background-color: rgb(207, 115, 2);
+    /* background-image: linear-gradient(to right, rgb(173, 113, 150) , rgb(217, 173, 209),rgb(154, 101, 110)); */
+    /* background-image: linear-gradient(to right, rgb(83, 122, 93) , rgb(213, 244, 213),rgb(116, 205, 153)); */
+    background-image: linear-gradient(to right, rgb(48, 49, 47) , rgb(237, 246, 237),rgb(77, 79, 77));
     color:rgb(100, 2, 18);
     line-height: 1.6rem;
     font-family: "Grenze Gotisch",serif;
     font-size: 1.2rem;
 }
-.program-container a{
+
+/* .program-container a{
     color: rgb(100, 2, 18);
-}
+/* } */
+.dance_img{
+    /* width:60%;      */
+    width:300px;
+    /* max-width: 100%; */
+    height:300px;
+    border:1px dashed rgb(237, 160, 7);
+    /* overflow: hidden; */
+    }
+
+.dance_container{
+    margin:5%;
+    display: flex;
+    align-items: flex-start;
+    gap:5%;
+} 
+
 .program-container h3{
-    color:rgb(224, 184, 184);
+    color:rgb(254, 202, 89);
     text-shadow: 3px 3px rgb(100, 2, 18);
     text-align: center;
 }
 .program-time{
     color:rgb(224, 184, 184);
-}
-
-            /* --------------DANCE PAGE---------------- */
-
-.dance-container{
-    margin:5%;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    line-height: 1.3rem;
-    gap:20px;
-}
-.dance-box{
-    border: 5px solid white;
-    background:linear-gradient(to right,white,rgb(132, 132, 109),black);
-    width:800px;
-    height:300px;
-}
-.dance-container p{
-    flex-wrap: wrap;
-    padding:6%;
-    line-height: 1.5rem;
-}
-
-                 /* --------------GURU PAGE---------------- */
-
-.guru-container{
-    margin: 1% ;
-    padding:3%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap:20px;
-}
-
-.guru-container img{
-    width:30%;
-    max-width: 100%;
-    height:30%;
-    border:1px dashed rgb(237, 160, 7);
-    overflow: hidden;
-}
-.guru-container p{
-    padding: 2%;
-    flex:1;
-    font-size: 1.2rem;
-    line-height: 1.6;
-    font-family: "Roboto Slab", serif;
 }
 
                  /* --------------MUSICIAN PAGE---------------- */
@@ -189,8 +207,8 @@ body{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    gap:20px;
-}
+    gap:20px;   
+}          
 
 .musician-container img{
     width:20%;
@@ -205,7 +223,7 @@ body{
     font-size: 1.2rem;
     line-height: 1.6;
     font-family: "Roboto Slab", serif;
-}
+}     
 
              /* --------------CREDIT PAGE---------------- */
 
@@ -235,10 +253,10 @@ body{
 
 
 @media (max-width: 768px) {
-
   .nataraj,.invite,.ketki {
     min-width: 100%;
     height: 33.33vh;
+    z-index: 1;
   }
   .nataraj,.ketki{
     background-size: contain;
@@ -253,14 +271,6 @@ body{
     font-size:1rem;;
   }
 
-  .guru-container img,.guru-container p{
-    min-width: 100%;
-    height: 30%;
-    font-size: 1rem;
-    line-height: 1.1rem;
-    display: block;
-  }
-
   .about-container{
     font-size: 1rem;
   }
@@ -273,5 +283,44 @@ body{
     display: block;
     justify-content: space-around;
   }
+    
+.nav-links{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top:60px;
+        /* right: 0; */
+        left:0;
+        width: 40%;
+        background-color: black; 
+         /* #444; */
+        border:1px solid gray;
+        padding: 1rem;
+        z-index: 1000;
+    }
+
+    .nav-links li{
+        /* margin: 1 rem 0; */
+        text-align: center;
+    }
+
+    .nav-links a:hover{
+        background-color: cadetblue;
+    }
+
+    .nav-links.show{
+        display: flex;
+    }
+
+    .hamburger{
+        display: flex;
+        color:white;
+        
+    }
+     .phone-icon {
+      font-size: 1rem;
+      padding: 8px;
+    }
 
   }
+
