@@ -12,7 +12,7 @@ body{
 
             /* --------------NAVIGATION BAR---------------- */
 
-.nav-bar{
+.nav-bar,.nav_phone{
     height: 40px;
     background-color: black;
     display: flex;
@@ -33,7 +33,7 @@ body{
     font-size: large;
     text-decoration: none;
 }
-            /* **** NEW  **** */
+
 .nav-links a:hover{
     background:rgb(248, 195, 230);
     border-radius: 3px;
@@ -55,35 +55,22 @@ body{
     }
 
 .nav_phone{
-    margin-left: 350px;
+    margin-left: 450px;
 }
 
-/* 
-    .phone-icon {
+
+.phone-icon {
       font-family: 'Material Symbols Outlined';
-      font-size: 48px;
-      color: #2196F3; 
+      font-size: 25px;
+      color: #32fe13; 
       vertical-align: middle;
-    }
-    .contact-text {
-      font-size: 20px;
+ }
+ .contact-text {
+      font-size: 15px;
       margin-left: 10px;
-    } */
+    }
 
-      .phone-icon {
-    /* position: fixed;
-    top: 5px;
-    right: 100px;
-    z-index: 1000; */
-    display: inline-flex;
-    /* align-items: center; */
-    font-size: 1.2rem;
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-  }
-
-  .phone-icon i {
+.phone-icon i {
     margin-right: 8px;
     margin-left: 130px;;
   }
@@ -100,8 +87,7 @@ body{
     height:90%;
     min-width: 33.3%;
     flex:1; 
-    background-image: url('image/nataraj.png');
-    /* filter: grayscale(); */
+    background-image: url('image/Nataraj.png');
     background-size: cover;
     background-position: center;
  }
@@ -111,10 +97,12 @@ body{
     height: 100%;
     flex:1;
     align-items: center;
-    padding-top:10%;
+    padding-top:8%;
     color:whitesmoke;
     text-align: center;
-    font-family: "Great Vibes",cursive;
+    font-family:"Merriweather", serif;
+    font-weight: 300;
+    /* font-style: italic; */
  }
 
 .ketki
@@ -128,15 +116,15 @@ body{
 }
 /*                          HOME PAGE TEXTS */
  .invite-BA{
-    font-size: 2.0rem;
+    font-size: 1.3rem;
  }
  .invite-name{
     color:rgb(224, 162, 5);
     font-weight: 800;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
  .invite-date{
-     font-size: 1.5rem;
+     font-size: 1.2rem;
  }
 
              /* --------------ABOUT PAGE---------------- */
@@ -158,44 +146,44 @@ body{
 .program-container{
     margin:2% 2%;
     padding:2% 4%;
-    border: 4px dotted rgb(9, 48, 85);
+    /* border: 4px dotted rgb(9, 48, 85); */
+    border: 2px dotted rgb(226, 229, 232);
     border-radius: 5px;
-    /* background-image: linear-gradient(to right, rgb(173, 113, 150) , rgb(217, 173, 209),rgb(154, 101, 110)); */
-    /* background-image: linear-gradient(to right, rgb(83, 122, 93) , rgb(213, 244, 213),rgb(116, 205, 153)); */
     background-image: linear-gradient(to right, rgb(48, 49, 47) , rgb(237, 246, 237),rgb(77, 79, 77));
     color:rgb(100, 2, 18);
     line-height: 1.6rem;
-    font-family: "Grenze Gotisch",serif;
+    font-family: "Cormorant Upright", serif;
+    font-weight: 900;
     font-size: 1.2rem;
 }
 
-/* .program-container a{
-    color: rgb(100, 2, 18);
-/* } */
-.dance_img{
-    /* width:60%;      */
-    width:300px;
-    /* max-width: 100%; */
-    height:300px;
-    border:1px dashed rgb(237, 160, 7);
-    /* overflow: hidden; */
-    }
 
 .dance_container{
     margin:5%;
     display: flex;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     gap:5%;
 } 
 
 .program-container h3{
-    color:rgb(254, 202, 89);
-    text-shadow: 3px 3px rgb(100, 2, 18);
+    color:rgb(228, 110, 14);
     text-align: center;
+    font-weight: 800;
 }
 .program-time{
-    color:rgb(224, 184, 184);
+    color:rgb(238, 232, 212)
 }
+
+.dance_img{
+    height:500px;
+    width:300px;
+    object-fit: cover;
+    display: block;
+    border:1px solid white;
+}
+.dance_details{
+    margin-top: 10%;
+ }
 
                  /* --------------MUSICIAN PAGE---------------- */
 
@@ -225,28 +213,8 @@ body{
     font-family: "Roboto Slab", serif;
 }     
 
-             /* --------------CREDIT PAGE---------------- */
+             /* --------------GALLERY PAGE---------------- */
 
-.credit{
-     background-color: black;
-     color:white;
-     font-family: "Roboto Slab", serif;
-     font-weight: 200;
-     font-size: medium;
-     text-align: center;
-     margin-top: 4%;
-}
-
-.credit-div{
-    margin-top:2%;
-    margin-left: 4%;
-    display: flex;
-    align-items: center;
-}
-
-.credit-div h4{
-    color:rgb(157, 166, 230)
-}
 
 
              /* --------------RESPONSIVE---------------- */
@@ -284,6 +252,15 @@ body{
     justify-content: space-around;
   }
     
+.dance_container{
+    display: block;
+    justify-content: space-around;
+}
+  .dance_img{
+    min-width: 100%;
+    /* height: auto; */
+    height:50%;
+  }
 .nav-links{
         display: none;
         flex-direction: column;
@@ -293,34 +270,38 @@ body{
         left:0;
         width: 40%;
         background-color: black; 
-         /* #444; */
         border:1px solid gray;
         padding: 1rem;
         z-index: 1000;
     }
 
-    .nav-links li{
-        /* margin: 1 rem 0; */
+.nav-links li{
         text-align: center;
     }
 
-    .nav-links a:hover{
+.nav-links a:hover{
         background-color: cadetblue;
     }
 
-    .nav-links.show{
+.nav-links.show{
         display: flex;
     }
 
-    .hamburger{
+.hamburger{
         display: flex;
         color:white;
         
     }
-     .phone-icon {
+.nav_phone{
+    margin-left: 100px;
+}
+.phone-icon {
       font-size: 1rem;
       padding: 8px;
+      margin-left: 50px;;
     }
-
+.contact-text{
+    margin-right: 5px;
+}
   }
 
