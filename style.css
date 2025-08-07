@@ -225,7 +225,8 @@ body{
     object-fit: cover;
     overflow: hidden; 
 }
-.musician-container p{
+/* .musician-container p{ */
+.musician-p{
     padding: 2%;
     flex:1;
     font-size: 1.2rem;
@@ -270,7 +271,7 @@ color: rgb(213, 170, 5);
   }
 
 
-   .musician-img,.musician-container p{
+ .musician-img,.musician-p{
     min-width: 80%;
     height: auto;
     font-size: 1rem;
@@ -278,7 +279,7 @@ color: rgb(213, 170, 5);
     display: block;
     justify-content: space-around;
   }
-  .musician-guru-img{
+ .musician-guru-img{
     height: 400px;
   }
 .program-container{
@@ -330,7 +331,7 @@ color: rgb(213, 170, 5);
         
     }
 .nav_phone{
-    margin-left: 100px;
+    margin-left: 155px;
 }
 .phone-icon {
       font-size: 1rem;
