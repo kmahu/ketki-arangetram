@@ -274,7 +274,7 @@ color: rgb(213, 170, 5);
  .musician-img,.musician-p{
     min-width: 80%;
     height: auto;
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.1rem;
     display: block;
     justify-content: space-around;
@@ -331,7 +331,7 @@ color: rgb(213, 170, 5);
         
     }
 .nav_phone{
-    margin-left: 155px;
+    margin-left: 140px;
 }
 .phone-icon {
       font-size: 1rem;
