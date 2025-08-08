@@ -54,7 +54,7 @@ body{
       transition: all 0.3s;
     }
 
-.nav_phone{
+/* .nav_phone{
     margin-left: 450px;
 }
 
@@ -73,7 +73,7 @@ body{
 .phone-icon i {
     margin-right: 8px;
     margin-left: 130px;;
-  }
+  } */
             /* --------------HOME PAGE---------------- */
 
 .home-container{
@@ -109,8 +109,11 @@ body{
    width:40%;
    height: 100%;
    flex:1;
+   padding-top:2%;
    background-image: url("image/D1.png");
-   background-size: cover;    
+   /* background-size: cover;     */
+   background-size: contain;
+   background-repeat: no-repeat;
    background-position: center; 
 }
 /*                          HOME PAGE TEXTS */
@@ -270,8 +273,11 @@ color: rgb(213, 170, 5);
     }
 
 .slide:nth-child(1) { animation-delay: 0s; }
-.slide:nth-child(2) { animation-delay: 10s; }
-.slide:nth-child(3) { animation-delay: 20s; }
+.slide:nth-child(2) { animation-delay: 3s; }
+.slide:nth-child(3) { animation-delay: 6s; }
+
+/* .slide:nth-child(2) { animation-delay: 10s; }
+.slide:nth-child(3) { animation-delay: 20s; } */
 /* .slide:nth-child(4) { animation-delay: 30s; }
 .slide:nth-child(5) { animation-delay: 40s; }
 .slide:nth-child(6) { animation-delay: 50s; } */
@@ -315,11 +321,12 @@ color: rgb(213, 170, 5);
    }
 
   .ketki{
-    height:60vh; 
+    height:50vh; 
     width:100%;
     background-position:center;
     background-repeat: no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
+    background-size: contain;
     object-fit: cover;
     /* z-index: 1; */
   }
