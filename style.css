@@ -102,13 +102,12 @@ body{
     text-align: center;
     font-family:"Cormorant Upright", serif;
     font-weight: 300;
-    /* font-style: italic; */
  }
 
 .ketki
 {
    width:40%;
-   height: 90%;
+   height: 100%;
    flex:1;
    background-image: url("image/D1.png");
    background-size: cover;    
@@ -246,24 +245,32 @@ color: rgb(213, 170, 5);
 
 
 @media (max-width: 768px) {
+    .home-container{
+        align-items: center;
+        text-align: center;
+    }
    .nataraj,.invite{
     min-width: 100%;
     height: 25vh;
     z-index: 1;
     padding:4%;
    }
-  .nataraj,.ketki{
+  .nataraj{
     background-size: contain;
     background-position: top center;
     background-repeat: no-repeat;
   }
   .ketki{
-    height:70vh;
+    height:50vh;
     width:100%;
-    z-index: 1;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    /* z-index: 1; */
   }
   .invite-BA,.invite-name,.invite-date{
-    font-size:1rem;;
+    font-size:1.1rem;;
   }
 
   .about-container{
@@ -274,8 +281,8 @@ color: rgb(213, 170, 5);
  .musician-img,.musician-p{
     min-width: 80%;
     height: auto;
-    font-size: 1.1rem;
-    line-height: 1.1rem;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
     display: block;
     justify-content: space-around;
   }
@@ -295,7 +302,6 @@ color: rgb(213, 170, 5);
 }
   .dance_img{
     min-width: 100%;
-    /* height: auto; */
     height:50%;
     margin-top:8%;
   }
